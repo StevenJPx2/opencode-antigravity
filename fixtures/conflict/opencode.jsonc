@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-5",
+
+  // This config uses an npm-style plugin specifier on purpose; setup pins a path.
+  "plugins": [
+    "sourcefed",
+    "opencode-antigravity-auth@2.1.2",
+  ],
+}

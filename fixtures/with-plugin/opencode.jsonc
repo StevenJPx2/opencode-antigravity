@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-5",
+
+  // Keep the local MCP server below for this project.
+  "mcp": {
+    "local-notes": {
+      "type": "local",
+      "command": ["node", "tools/notes-server.js"],
+    },
+  },
+
+  "plugins": [
+    "sourcefed",
+    "/tmp/oc-antigravity-test/node_modules/opencode-antigravity-auth",
+  ],
+}

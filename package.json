@@ -1,0 +1,20 @@
+{
+  "name": "opencode-antigravity",
+  "version": "1.0.0",
+  "description": "Repeatable, checksum-verified install of the pinned gulp79 fork build (2.1.2-gulp.8) of opencode-antigravity-auth, wired as an absolute-path native plugin in OpenCode V2 with multi-account rotation.",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "opencode-antigravity-setup": "bin/setup.js",
+    "opencode-antigravity-doctor": "bin/doctor.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check bin/setup.js && node --check bin/doctor.js && node --check lib/common.js && node --check lib/jsonc.js",
+    "setup": "node bin/setup.js",
+    "doctor": "node bin/doctor.js"
+  }
+}

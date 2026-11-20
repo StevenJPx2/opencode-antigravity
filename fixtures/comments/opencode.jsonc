@@ -1,0 +1,17 @@
+{
+  /* Top-level OpenCode V2 configuration for this repository. */
+  "$schema": "https://opencode.ai/config.json", // published V2 schema
+
+  /*
+   * Plugins load in the order listed here.
+   * Keep unrelated plugins before the Antigravity entry.
+   */
+  "plugins": [
+    // A small helper plugin used by the team.
+    "sourcefed", /* keep this comment after the entry */
+
+    /* The setup script adds the pinned Antigravity plugin below. */
+  ],
+
+  "model": "openai/gpt-5", // default model for new sessions
+}
